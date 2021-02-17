@@ -4,7 +4,7 @@ const getPeoplePromise = fetch => {
     return fetch('https://swapi.dev/api/people')
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            //console.log(data);
             return {
                 count: data.count,
                 result: data.result
@@ -15,12 +15,16 @@ const getPeoplePromise = fetch => {
 const getPeople = async (fetch) => {
     const getRequest = await fetch('https://swapi.dev/api/people')
     const data = await getRequest.json()
-    console.log(data);
+    //console.log(data);
     return {
         count: data.count,
-        result: data.result
+        results: data.results
     };
 }
 
-getPeople(fetch);
+//getPeople(fetch);
 
+module.exports = {
+    getPeople,
+    getPeoplePromise
+}
