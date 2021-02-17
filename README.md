@@ -1,3 +1,3 @@
 # test-with-jest
 
-This is a nice project that I can implement unit testing using Jest.
+In this project i've implemented unit testing using Jest.
