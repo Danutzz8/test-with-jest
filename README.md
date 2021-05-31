@@ -1,3 +1,3 @@
 # test-with-jest
 
-In this project i've implemented unit testing using Jest on React project.
+In this project I've implemented unit testing using Jest on React project.
